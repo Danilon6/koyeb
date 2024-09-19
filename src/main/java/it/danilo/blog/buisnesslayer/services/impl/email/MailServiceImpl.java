@@ -21,8 +21,8 @@ public class MailServiceImpl implements MailService {
 
     private final JavaMailSender javaMailSender;
 
-    @Value("${value.endpoint.reset.password}")
-    private String endpointResetPassword;
+    //@Value("${value.endpoint.reset.password}")
+    private String endpointResetPassword = "test";
 
     @Override
     public void sendResetPasswordMail(String email, String token) throws EmailSendingException {

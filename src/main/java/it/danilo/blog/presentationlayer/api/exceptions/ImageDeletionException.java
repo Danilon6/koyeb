@@ -1,0 +1,11 @@
+package it.danilo.blog.presentationlayer.api.exceptions;
+
+public class ImageDeletionException extends RuntimeException {
+    public ImageDeletionException(String message) {
+        super(message);
+    }
+
+    public ImageDeletionException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
